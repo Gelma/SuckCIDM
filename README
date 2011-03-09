@@ -1,10 +1,15 @@
-== Che è? ==
+== Che è SuckCIDM.py? ==
 
 Si tratta di un banale script, buttato giù al volo, per
 pescare delle informazioni dal sito www.cidim.it
 
-E' la summa di come *non§* andrebbe scritto codice in Python,
+E' la summa di come *non* andrebbe scritto codice in Python,
 non andrebbero lette le pagine web, ecc.
 
 Banalmente serviva qualcosa che funzionasse al volo all'interno di questo thread:
 http://lugbs.linux.it/pipermail/lug/2011-February/030243.html
+
+== Che è SuckClassicscoreHut2.py? ==
+
+Come sopra, ma scritto con un corretto parsing del DOM,
+relativamente al dominio classicscore.hut2.ru.
