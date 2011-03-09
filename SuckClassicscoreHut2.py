@@ -6,6 +6,8 @@ try:
 	from BeautifulSoup import BeautifulSoup
 except:
 	print "Installa il package BeautifulSoup"
+	import sys
+	sys.exit()
 
 for lettera in string.letters[26:]:
 	print 'Elaboro lettera',lettera
@@ -15,12 +17,12 @@ for lettera in string.letters[26:]:
 
 	s=BeautifulSoup(html)
 
-	for tag in s.findAll('a'):
+for tag in s.findAll('a'):
 	url = tag.attrs[0][1]
 	nome = tag.text+'.pdf'
 	if 'scorage' in url:
-	    print 'Scarico',url
-	    try:
+		print 'Scarico',url
+		try:
 			urllib.urlretrieve(url,'/tmp/'+nome)
-	    except:
+		except:
 			print 'Sbajato',url
