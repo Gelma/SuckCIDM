@@ -34,7 +34,7 @@ for lettera in string.letters[26:]:
 			print 'scaricato',nome
 			except:
 			print '                 Sbajato',url,nome
-			open('riscarica.txt','a').write(url+' '+nome+' \n')
+			open('riscarica.txt','a').write(url+'\n')
 			time.sleep(30)
 		else:
 			print 'Salto',nome
